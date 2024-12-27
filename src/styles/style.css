@@ -593,6 +593,11 @@ video {
   margin-right: auto;
 }
 
+.mx-4{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .-mt-16{
   margin-top: -4rem;
 }
@@ -915,6 +920,15 @@ button:focus-visible {
 
   .md\:row-span-4{
     grid-row: span 4 / span 4;
+  }
+
+  .md\:m-0{
+    margin: 0px;
+  }
+
+  .md\:mx-auto{
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .md\:mt-0{
