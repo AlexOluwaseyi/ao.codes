@@ -32,6 +32,12 @@
   height: calc(100dvh - 64px);
 }
 
+@media (max-width: 480px) {
+  .landing-page {
+    height: max-content;
+  }
+}
+
 :root {
   font-family: "Ubuntu Mono";
 }
