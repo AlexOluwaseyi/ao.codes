@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* @import "tailwindcss"; */
+
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -108,9 +112,7 @@
   --tw-contain-style:  ;
 }
 
-/*
-! tailwindcss v3.4.15 | MIT License | https://tailwindcss.com
-*/
+/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -594,10 +596,6 @@ video {
   margin-left: 0.75rem;
 }
 
-.mt-16{
-  margin-top: 4rem;
-}
-
 .mt-4{
   margin-top: 1rem;
 }
@@ -728,25 +726,25 @@ video {
 }
 
 .text-regular {
-  font-family: "Ubuntu Mono", serif;
+  font-family: "Urbanist", serif;
   font-weight: 400;
   font-style: normal;
 }
 
 .text-bold {
-  font-family: "Ubuntu Mono", serif;
+  font-family: "Urbanist", serif;
   font-weight: 700;
   font-style: normal;
 }
 
 .text-regular-italic {
-  font-family: "Ubuntu Mono", serif;
+  font-family: "Urbanist", serif;
   font-weight: 400;
   font-style: italic;
 }
 
 .text-bold-italic {
-  font-family: "Ubuntu Mono", serif;
+  font-family: "Urbanist", serif;
   font-weight: 700;
   font-style: italic;
 }
@@ -763,7 +761,7 @@ video {
 }
 
 :root {
-  font-family: "Ubuntu Mono";
+  font-family: "Urbanist";
 }
 
 /* 
@@ -868,6 +866,12 @@ button:focus-visible {
 .focus\:outline-none:focus{
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+@media (min-width: 480px){
+  .xs\:mt-0{
+    margin-top: 0px;
+  }
 }
 
 @media (min-width: 640px){

@@ -38,7 +38,7 @@ const Landing = () => {
           </ul>
         </div>
 
-        <div className="h-16 mt-4 md:h-full md:col-span-2 md:row-span-1 bg-green-400 rounded-lg shadow-md flex items-center justify-center">
+        <div className="h-16 xs:mt-0 mt-4 md:h-full md:col-span-2 md:row-span-1 bg-green-400 rounded-lg shadow-md flex items-center justify-center">
           <p>Say hi.</p>
         </div>
       </div>
