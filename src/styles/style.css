@@ -709,6 +709,14 @@ video {
   margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.self-center{
+  align-self: center;
+}
+
+.justify-self-center{
+  justify-self: center;
+}
+
 .rounded-lg{
   border-radius: 0.5rem;
 }
