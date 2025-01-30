@@ -36,11 +36,17 @@
   height: calc(100dvh - 64px);
 }
 
-@media (max-width: 480px) {
+.custom-bg {
+  background-image: url("/src/assets/images/background.jpg");
+  background-size: center;
+  background-repeat: cover;
+}
+
+/* @media (max-width: 480px) {
   .landing-page {
     height: max-content;
   }
-}
+} */
 
 :root {
   font-family: "Urbanist";
