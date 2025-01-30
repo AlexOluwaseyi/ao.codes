@@ -2,6 +2,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
 /* @import "tailwindcss"; */
 
 *, ::before, ::after{
@@ -692,6 +694,10 @@ video {
   padding-left: 0.5rem;
 }
 
+.pl-3{
+  padding-left: 0.75rem;
+}
+
 .text-left{
   text-align: left;
 }
@@ -762,6 +768,11 @@ video {
 
 :root {
   font-family: "Urbanist";
+}
+
+.material-symbols-outlined {
+  font-size: 24px;
+  vertical-align: middle;
 }
 
 /* 

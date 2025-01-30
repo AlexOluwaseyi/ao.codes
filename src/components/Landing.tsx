@@ -1,4 +1,5 @@
 import profile from "../assets/images/headshot profile2.jpeg";
+import DownloadIcon from "../svg/download.svg";
 // import { motion } from "framer-motion";
 
 const Landing = () => {
@@ -39,7 +40,15 @@ const Landing = () => {
         </div>
 
         <div className="h-16 xs:mt-0 mt-4 md:h-full md:col-span-2 md:row-span-1 bg-green-400 rounded-lg shadow-md flex items-center justify-center">
-          <p>Say hi.</p>
+          <a
+            className="flex"
+            href="../src/docs/Oluwaseyi Akintola '25.pdf"
+            download
+          >
+            <p>Download resume.</p>{" "}
+            <img className="pl-3" src={DownloadIcon} alt="Download icon" />
+            {/* <span className="material-symbols-outlined pl-3">download</span> */}
+          </a>
         </div>
       </div>
     </div>
