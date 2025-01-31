@@ -8,14 +8,14 @@ const Landing = () => {
     <div className="landing-page flex flex-col mx-4 xs:mx-4 md:mx-24 max-w-4xl justify-self-center items-center justify-center">
       <div className="text-center mx-4 md:mx-24 text-regular text-white justify-center items-center">
         <h1 className="text-bold">Hi there, I'm Alex Oluwaseyi</h1>
-        <p className="text-xs my-4">
+        <p className="text-sm md:text-md my-4">
           I'm a passionate Software Engineer, Web Developer, and Freelancer,
           dedicated to crafting efficient, user-focused solutions. With a solid
           foundation in electronics and electrical engineering, I bring a unique
           perspective to designing and building purposeful software and web
           applications.
         </p>
-        <p className="text-xs my-4">
+        <p className="text-sm md:text-md my-4">
           Whether it's creating sleek, responsive websites or developing robust
           backend systems, I thrive on turning ideas into impactful digital
           experiences. Let's build something amazing together. 🚀
@@ -27,7 +27,7 @@ const Landing = () => {
           href="../src/docs/Oluwaseyi Akintola '25.pdf"
           download
         >
-          <p>Download resume.</p>{" "}
+          <p className="text-black">Download resume.</p>{" "}
           <img className="pl-3" src={DownloadIcon} alt="Download icon" />
           {/* <span className="material-symbols-outlined pl-3">download</span> */}
         </a>
