@@ -1,5 +1,9 @@
 import { useState } from "react";
 import aocwhite from "../assets/svg/AOC-white.svg";
+import LinkedIn from "../assets/png/linkedin.png";
+import Twitter from "../assets/png/twitter.png";
+import GitHub from "../assets/png/github.png";
+import Blog from "../assets/png/blog.png";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -53,27 +57,47 @@ const Header = () => {
           >
             <a
               href="#Stories"
-              className="py-4 sm:py-0 hover:text-red-400 hover:underline hover:underline-offset-2"
+              className="!m-0 py-4 sm:py-0 hover:text-red-400 hover:underline hover:underline-offset-2"
             >
-              Stories
+              <img
+                src={Blog}
+                alt="icon for blogs/stories"
+                className="hidden sm:block h-[20px] w-[20px]"
+              />
+              <span className="sm:hidden">Stories</span>
             </a>
             <a
               href="#LinkedIn"
-              className="py-4 sm:py-0 hover:text-red-400 hover:underline hover:underline-offset-2"
+              className="!m-0 py-4 sm:py-0 hover:text-red-400 hover:underline hover:underline-offset-2"
             >
-              LinkedIn
+              <img
+                src={LinkedIn}
+                alt="icon for LinkedIn"
+                className="hidden sm:block h-[20px] w-[20px]"
+              />
+              <span className="sm:hidden">LinkedIn</span>
             </a>
             <a
               href="#GitHub"
-              className="py-4 sm:py-0 hover:text-red-400 hover:underline hover:underline-offset-2"
+              className="!m-0 py-4 sm:py-0 hover:text-red-400 hover:underline hover:underline-offset-2"
             >
-              GitHub
+              <img
+                src={GitHub}
+                alt="icon for GitHub"
+                className="hidden sm:block h-[20px] w-[20px]"
+              />
+              <span className="sm:hidden">GitHub</span>
             </a>
             <a
               href="#Twitter"
-              className="py-4 sm:py-0 hover:text-red-400 hover:underline hover: underline-offset-2"
+              className="!m-0 py-4 sm:py-0 hover:text-red-400 hover:underline hover: underline-offset-2"
             >
-              X
+              <img
+                src={Twitter}
+                alt="icon for Twitter"
+                className="hidden sm:block h-[20px] w-[20px]"
+              />
+              <span className="sm:hidden ">X</span>
             </a>
             <a
               href="#quote"

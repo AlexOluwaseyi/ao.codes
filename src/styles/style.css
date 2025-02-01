@@ -572,28 +572,16 @@ video {
   bottom: 0px;
 }
 
-.right-0{
-  right: 0px;
+.left-0{
+  left: 0px;
 }
 
 .top-0{
   top: 0px;
 }
 
-.left-0{
-  left: 0px;
-}
-
 .z-0{
   z-index: 0;
-}
-
-.-z-20{
-  z-index: -20;
-}
-
-.-z-10{
-  z-index: -10;
 }
 
 .z-10{
@@ -606,6 +594,14 @@ video {
 
 .col-span-2{
   grid-column: span 2 / span 2;
+}
+
+.m-0{
+  margin: 0px;
+}
+
+.\!m-0{
+  margin: 0px !important;
 }
 
 .mx-4{
@@ -663,12 +659,38 @@ video {
   height: 100%;
 }
 
+.h-screen{
+  height: 100vh;
+}
+
+.h-\[10\]{
+  height: 10;
+}
+
+.h-\[20px\]{
+  height: 20px;
+}
+
 .w-dvw{
   width: 100dvw;
 }
 
+.w-\[20px\]{
+  width: 20px;
+}
+
 .max-w-4xl{
   max-width: 56rem;
+}
+
+.scale-50{
+  --tw-scale-x: .5;
+  --tw-scale-y: .5;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.transform{
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .grid-cols-1{
@@ -699,10 +721,6 @@ video {
   justify-content: center;
 }
 
-.justify-between{
-  justify-content: space-between;
-}
-
 .justify-evenly{
   justify-content: space-evenly;
 }
@@ -721,10 +739,6 @@ video {
   margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.self-end{
-  align-self: flex-end;
-}
-
 .justify-self-end{
   justify-self: end;
 }
@@ -735,6 +749,10 @@ video {
 
 .rounded-lg{
   border-radius: 0.5rem;
+}
+
+.border{
+  border-width: 1px;
 }
 
 .bg-black{
@@ -767,10 +785,6 @@ video {
 
 .pl-3{
   padding-left: 0.75rem;
-}
-
-.pt-12{
-  padding-top: 3rem;
 }
 
 .pt-16{
@@ -860,6 +874,14 @@ video {
   vertical-align: middle;
 }
 
+.iframes {
+  border: 0;
+  overflow: "hidden";
+  position: "relative";
+  width: "100%";
+  height: "100%";
+}
+
 .hover\:text-red-400:hover{
   --tw-text-opacity: 1;
   color: rgb(248 113 113 / var(--tw-text-opacity, 1));
@@ -890,6 +912,10 @@ video {
 }
 
 @media (min-width: 640px){
+  .sm\:block{
+    display: block;
+  }
+
   .sm\:flex{
     display: flex;
   }

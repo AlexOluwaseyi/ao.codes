@@ -11,9 +11,9 @@ const Landing = () => {
         <p className="text-sm md:text-md my-4">
           I'm a passionate Software Engineer, Web Developer, and Freelancer,
           dedicated to crafting efficient, user-focused solutions. With a solid
-          foundation in electronics and electrical engineering, I bring a unique
-          perspective to designing and building purposeful software and web
-          applications.
+          foundation in ethical hacking and cybersecurity, I bring a unique
+          perspective to designing and building purposeful and secure software
+          and web applications.
         </p>
         <p className="text-sm md:text-md my-4">
           Whether it's creating sleek, responsive websites or developing robust
