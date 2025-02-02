@@ -56,7 +56,7 @@ const Header = () => {
             aria-label="main"
           >
             <a
-              href="#Stories"
+              href="https://blogs.alexoluwaseyi.codes"
               className="!m-0 py-4 sm:py-0 hover:text-red-400 hover:underline hover:underline-offset-2"
             >
               <img
