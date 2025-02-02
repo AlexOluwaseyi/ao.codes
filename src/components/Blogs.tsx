@@ -37,7 +37,7 @@ const Blog = () => {
   return (
     <>
       <Header />
-      <div className=" bg-gray-100 p-6">
+      <div className="h-[calc(100dvh-15%)] sm:dvh bg-gray-100 p-6">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
           <header className="mb-8">
