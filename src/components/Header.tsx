@@ -16,7 +16,10 @@ const Header = () => {
     <header className="bg-black/50 h-16 text-white relative top-0 md:z-10">
       <div className="max-w-4xl mx-auto p-4 grid grid-cols-3">
         <div className="col-span-2 grid grid-cols-1 items-center">
-          <a className="flex gap-3 text-3xl text-regular" href="#hero">
+          <a
+            className="flex gap-3 text-3xl text-regular"
+            href="https://alexoluwaseyi.codes"
+          >
             <img alt="AOC Logo White" src={aocwhite} className="h-8" />
             {/* AlexOluwaseyi.Codes */}
           </a>
@@ -56,7 +59,7 @@ const Header = () => {
             aria-label="main"
           >
             <a
-              href="#Stories"
+              href="https://blogs.alexoluwaseyi.codes"
               className="!m-0 py-4 sm:py-0 hover:text-red-400 hover:underline hover:underline-offset-2"
             >
               <img
@@ -67,7 +70,7 @@ const Header = () => {
               <span className="sm:hidden">Stories</span>
             </a>
             <a
-              href="#LinkedIn"
+              href="https://linkedin.com/in/alexoluwaseyi"
               className="!m-0 py-4 sm:py-0 hover:text-red-400 hover:underline hover:underline-offset-2"
             >
               <img
@@ -78,7 +81,7 @@ const Header = () => {
               <span className="sm:hidden">LinkedIn</span>
             </a>
             <a
-              href="#GitHub"
+              href="https://github.com/alexoluwaseyi"
               className="!m-0 py-4 sm:py-0 hover:text-red-400 hover:underline hover:underline-offset-2"
             >
               <img
@@ -89,7 +92,7 @@ const Header = () => {
               <span className="sm:hidden">GitHub</span>
             </a>
             <a
-              href="#Twitter"
+              href="https://x.com/alex_oluwaseyi"
               className="!m-0 py-4 sm:py-0 hover:text-red-400 hover:underline hover: underline-offset-2"
             >
               <img
