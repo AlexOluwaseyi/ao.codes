@@ -1,14 +1,18 @@
-import Blog from "./components/Blogs";
-// import Homepage from "./components/Homepage";
+import BlogsPage from "./components/BlogsPage";
+import BlogPost from "./components/BlogPost";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
-    <>
-      <div className="h-dvh bg-black">
-        {/* <Homepage /> */}
-        <Blog />
-      </div>
-    </>
+    <Router>
+      <Routes>
+        {/* Route for Blog Listing */}
+        <Route path="/" element={<BlogsPage />} />
+
+        {/* Dynamic Route for Individual Blog Post */}
+        <Route path="/:id" element={<BlogPost />} />
+      </Routes>
+    </Router>
   );
 };
 export default App;

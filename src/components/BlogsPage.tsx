@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
+import ShareButtons from "./ShareButtons";
 
 const mockPosts = [
   {
@@ -27,7 +28,7 @@ const mockPosts = [
   },
 ];
 
-const Blog = () => {
+const BlogsPage = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
   const filteredPosts = mockPosts.filter((post) =>
@@ -37,7 +38,7 @@ const Blog = () => {
   return (
     <>
       <Header />
-      <div className="h-[calc(100dvh-15%)] sm:dvh bg-gray-100 p-6">
+      <div className="h-[calc(100dvh-15%)] bg-gray-50 sm:dvh p-6">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
           <header className="mb-8">
@@ -73,6 +74,16 @@ const Blog = () => {
                   <div className="mt-4 text-sm text-gray-500">
                     <span>By {post.author}</span> | <span>{post.date}</span>
                   </div>
+                  <a
+                    href={`${post.id}`}
+                    className="text-blue-500 hover:underline mt-4 inline-block"
+                  >
+                    Continue Reading →
+                  </a>
+                  <ShareButtons
+                    title={post.title}
+                    url={`https://blogs.alexoluwaseyi.codes/${post.id}`}
+                  />
                 </div>
               ))
             ) : (
@@ -86,4 +97,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default BlogsPage;

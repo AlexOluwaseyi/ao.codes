@@ -13,10 +13,13 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-black/50 h-16 text-white relative top-0 md:z-10">
+    <header className="bg-black h-16 text-white relative top-0 md:z-10">
       <div className="max-w-4xl mx-auto p-4 grid grid-cols-3">
         <div className="col-span-2 grid grid-cols-1 items-center">
-          <a className="flex gap-3 text-3xl text-regular" href="#hero">
+          <a
+            className="flex gap-3 text-3xl text-regular"
+            href="https://alexoluwaseyi.codes"
+          >
             <img alt="AOC Logo White" src={aocwhite} className="h-8" />
             {/* AlexOluwaseyi.Codes */}
           </a>
