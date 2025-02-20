@@ -58,7 +58,7 @@ const BlogsPage = () => {
             <input
               type="text"
               placeholder="Search posts..."
-              className="w-full p-3 pr-10 rounded-lg border bg-black border-gray-300 focus:ring-2 focus:ring-blue-400 focus:outline-none text-white"
+              className="w-full p-3 pr-10 rounded-lg border bg-black border-gray-300 focus:ring-2 focus:ring-blue-400 focus:outline-none text-white -z-10"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />

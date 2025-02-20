@@ -32,7 +32,7 @@ const Header = () => {
             className={`${
               isMobileMenuOpen
                 ? "hidden"
-                : "text-regular text-3xl justify-self-end sm:hidden focus:outline-none"
+                : "text-regular text-3xl justify-self-end sm:hidden focus:outline-none z-50"
             }`}
             onClick={toggleMobileMenu}
           >
@@ -42,7 +42,7 @@ const Header = () => {
             id="mobile-close-button"
             className={`${
               isMobileMenuOpen
-                ? "text-reguler text-3xl justify-self-end z-10"
+                ? "text-reguler text-3xl justify-self-end z-50"
                 : "hidden"
             }`}
             // className="text-regular text-3xl justify-self-end sm:hidden focus:outline-none"
@@ -53,7 +53,7 @@ const Header = () => {
           <nav
             className={`${
               isMobileMenuOpen
-                ? "flex h-dvh w-dvw top-0 left-0 pt-16 absolute bg-black flex-col items-center text-center"
+                ? "flex h-dvh w-dvw top-0 left-0 pt-16 absolute bg-black flex-col items-center text-center z-10"
                 : "hidden sm:flex flex-row space-x-8 text-3xl text-regular items-center justify-evenly"
             }`}
             aria-label="main"
