@@ -37,7 +37,7 @@ const BlogPost = () => {
     };
 
     fetchPosts();
-  }, [id]); // Runs when `id` changes
+  }, [id, posts]); // Runs when `id` changes
 
   if (loading) {
     return <div className="text-white text-center">Loading...</div>;
