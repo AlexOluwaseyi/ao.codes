@@ -102,7 +102,7 @@ const BlogsPage = () => {
                     Share:{" "}
                     <ShareButtons
                       title={post.title}
-                      url={`https://blogs.alexoluwaseyi.codes/${post.id}`}
+                      url={`https://blogs.alexoluwaseyi.codes/blog/${post.id}`}
                     />
                   </div>
                 </div>
