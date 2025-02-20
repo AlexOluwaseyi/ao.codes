@@ -10,7 +10,7 @@ const App = () => {
         <Route path="/" element={<BlogsPage />} />
 
         {/* Dynamic Route for Individual Blog Post */}
-        <Route path="/:id" element={<BlogPost />} />
+        <Route path="/blog/:id" element={<BlogPost />} />
       </Routes>
     </Router>
   );

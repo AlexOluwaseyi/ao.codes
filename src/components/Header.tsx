@@ -54,7 +54,7 @@ const Header = () => {
             className={`${
               isMobileMenuOpen
                 ? "flex h-dvh w-dvw top-0 left-0 pt-16 absolute bg-black flex-col items-center text-center"
-                : "hidden sm:flex flex-row space-x-8 text-xl-text-regular items-center justify-evenly"
+                : "hidden sm:flex flex-row space-x-8 text-3xl text-regular items-center justify-evenly"
             }`}
             aria-label="main"
           >

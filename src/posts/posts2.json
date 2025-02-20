@@ -1,0 +1,52 @@
+[
+    {
+        "id": "3b02d6f9-4530-4c70-9427-871d0aec69d5",
+        "title": "Generate and Use a GPG Key for Signed Git Commits",
+        "excerpt": "Learn how to generate a GPG key and use it to sign your Git commits.",
+        "author": "Alex Oluwaseyi",
+        "date": "January 30, 2025",
+        "readTime": "8 min read",
+        "tags": [
+            "Git",
+            "GitHub",
+            "Version Control System",
+            "gpg"
+        ],
+        "content": "### Generate GPG Key 🔑\n\nTo generate a new GPG key, run the following command:\n\n```sh\ngpg --gen-key\n```\n\n### Add GPG Key to Git Configuration 🔧\n\nOnce generated, set your GPG key ID in Git:\n\n```sh\ngit config --global user.signingkey <gpg key id>\n```\n\n### Verify Your GPG Key ✅\n\nEnsure your key exists by listing all available keys:\n\n```sh\ngpg --list-keys\n```\n\n### Export Public Key 📤\n\nTo use your key with GitHub, export your public key:\n\n```sh\ngpg --armor --export <gpg key id>\n```\n\n### Set Up GPG Key in GitHub 🔗\n\n1. Sign in to [GitHub](https://github.com/settings/keys).\n2. Click [New GPG Key](https://github.com/settings/gpg/new).\n3. Copy and paste your public key from the previous step.\n\nExample:\n\n```C\n-----BEGIN PGP PUBLIC KEY BLOCK-----\nrandom characters representing your public key\n-----END PGP PUBLIC KEY BLOCK-----\n```\n\n### Enable Vigilant Mode 🛡\n\nTo ensure unsigned commits are flagged, enable `Vigilant Mode` by selecting `Flag unsigned commits as unverified` in GitHub settings.\n\n### Start Signing Your Commits ✍️\n\nTo sign a commit, use the `-S` flag:\n\n```sh\ngit commit -S -m \"Your commit message\"\n```\n\nTo enable GPG signing for all future commits, run:\n\n```sh\ngit config --global commit.gpgSign true\n```\n\n📝 Now, every commit you make will be GPG-signed! 🔐"
+    },
+    {
+        "id": "1",
+        "title": "Understanding React Hooks: A Deep Dive",
+        "excerpt": "Learn how to generate a GPG key and use it to sign your Git commits.",
+        "author": "Jane Developer",
+        "date": "2025-02-19",
+        "readTime": "8 min read",
+        "tags": [
+            "React",
+            "JavaScript",
+            "Web Development",
+            "Hooks"
+        ],
+        "content": [
+            {
+                "type": "text",
+                "content": "React Hooks have revolutionized how we write functional components. Let's explore how they work and best practices for using them effectively."
+            },
+            {
+                "type": "code",
+                "language": "javascript",
+                "content": "// Basic useState example\nconst [count, setCount] = useState(0);\n\n// Basic useEffect example\nuseEffect(() => {\n  document.title = `Count: ${count}`;\n  return () => {\n    document.title = 'React App';\n  };\n}, [count]);"
+            },
+            {
+                "type": "text",
+                "content": "The useState Hook is one of the most fundamental hooks in React. It allows us to add state to functional components without converting them to class components."
+            },
+            {
+                "type": "image",
+                "url": "/api/placeholder/800/400",
+                "alt": "React Hooks Lifecycle Diagram",
+                "caption": "React Hooks Lifecycle and Dependencies"
+            }
+        ]
+    }
+]

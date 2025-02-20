@@ -1,0 +1,36 @@
+[
+  {
+    "id": "1",
+    "title": "Understanding React Hooks: A Deep Dive",
+    "author": "Jane Developer",
+    "date": "2025-02-19",
+    "readTime": "8 min read",
+    "tags": [
+      "React",
+      "JavaScript",
+      "Web Development",
+      "Hooks"
+    ],
+    "content": [
+      {
+        "type": "text",
+        "content": "React Hooks have revolutionized how we write functional components. Let's explore how they work and best practices for using them effectively."
+      },
+      {
+        "type": "code",
+        "language": "javascript",
+        "content": "// Example of useState and useEffect hooks\nconst [count, setCount] = useState(0);\n\nuseEffect(() => {\n  // This code runs after every render\n  document.title = `Count: ${count}`;\n  \n  return () => {\n    // Cleanup code here\n    document.title = 'React App';\n  };\n}, [count]);"
+      },
+      {
+        "type": "text",
+        "content": "The useState Hook is one of the most fundamental hooks in React. It allows us to add state to functional components without converting them to class components."
+      },
+      {
+        "type": "image",
+        "url": "/api/placeholder/800/400",
+        "alt": "React Hooks Lifecycle Diagram",
+        "caption": "React Hooks Lifecycle and Dependencies"
+      }
+    ]
+  }
+]
