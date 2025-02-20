@@ -1,7 +1,7 @@
 import BlogsPage from "./components/BlogsPage";
 import BlogPost from "./components/BlogPost";
-// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
@@ -16,4 +16,5 @@ const App = () => {
     </Router>
   );
 };
+
 export default App;
