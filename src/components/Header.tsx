@@ -3,7 +3,9 @@ import aocwhite from "../assets/svg/AOC-white.svg";
 import LinkedIn from "../assets/png/linkedin.png";
 import Twitter from "../assets/png/twitter.png";
 import GitHub from "../assets/png/github.png";
-import Blog from "../assets/png/blog.png";
+// import Blog from "../assets/png/blog.png";
+
+import { Library } from "lucide-react";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -28,7 +30,6 @@ const Header = () => {
         <div className="col-span-1 grid grid-cols-1 gap-4">
           <button
             id="mobile-open-button"
-            // className="text-regular text-3xl justify-self-end sm:hidden focus:outline-none"
             className={`${
               isMobileMenuOpen
                 ? "hidden"
@@ -45,7 +46,6 @@ const Header = () => {
                 ? "text-reguler text-3xl justify-self-end z-10"
                 : "hidden"
             }`}
-            // className="text-regular text-3xl justify-self-end sm:hidden focus:outline-none"
             onClick={toggleMobileMenu}
           >
             &times;
@@ -62,11 +62,12 @@ const Header = () => {
               href="https://blogs.alexoluwaseyi.codes"
               className="!m-0 py-4 sm:py-0 hover:text-red-400 hover:underline hover:underline-offset-2"
             >
-              <img
+              {/* <img
                 src={Blog}
                 alt="icon for blogs/stories"
                 className="hidden sm:block h-[20px] w-[20px]"
-              />
+              /> */}
+              <Library />
               <span className="sm:hidden">Stories</span>
             </a>
             <a

@@ -2,6 +2,7 @@
 import DownloadIcon from "../assets/svg/download.svg";
 // import background from "../assets/images/background.jpg";
 // import { motion } from "framer-motion";
+// import { Download } from "lucide-react";`
 
 const Landing = () => {
   return (
@@ -21,16 +22,23 @@ const Landing = () => {
           experiences. Let's build something amazing together. 🚀
         </p>
       </div>
-      <div className="h-4 xs:mt-0 p-4 mt-4 bg-green-400 rounded-lg shadow-md flex items-center justify-center">
-        <a
-          className="flex"
-          href="../src/docs/Oluwaseyi Akintola '25.pdf"
-          download
-        >
-          <p className="text-black">Download resume.</p>{" "}
-          <img className="pl-3" src={DownloadIcon} alt="Download icon" />
-          {/* <span className="material-symbols-outlined pl-3">download</span> */}
-        </a>
+      <div className="flex flex-rows spaced-between justify-center items-center gap-8">
+        <div className="h-4 xs:mt-0 p-4 mt-4 bg-green-400 rounded-lg shadow-md flex items-center justify-center">
+          <a className="flex" href="#">
+            <p className="text-black text-bold">Get in touch.</p>{" "}
+          </a>
+        </div>
+        <div className="h-4 xs:mt-0 p-4 mt-4 bg-green-400 rounded-lg shadow-md flex items-center justify-center">
+          <a
+            className="flex"
+            href="../src/docs/Oluwaseyi Akintola '25.pdf"
+            download
+          >
+            <p className="text-black text-bold">Download resume.</p>{" "}
+            <img className="pl-3" src={DownloadIcon} alt="Download icon" />
+            {/* <Download /> */}
+          </a>
+        </div>
       </div>
     </div>
   );

@@ -2,6 +2,7 @@ import Footer from "./Footer";
 import Header from "./Header";
 import Landing from "./Landing";
 // import Projects from "./Projects";
+import GetInTouch from "./GetInTouch";
 
 const Homepage = () => {
   return (
@@ -9,6 +10,7 @@ const Homepage = () => {
       <Header />
       <Landing />
       {/* <Projects /> */}
+      <GetInTouch />
       <Footer />
     </div>
   );
